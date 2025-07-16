@@ -1,9 +1,8 @@
 # Mobile Market Tracker
 
-This is the full version of the tracker.
+Updated version with 'New to Mobile Market?' default set to 'No'.
 
-## How to Deploy
-1. Upload contents of `/docs` folder to your GitHub repo
-2. Go to Settings > Pages
-3. Set source to `main` branch and `/docs` folder
-4. Your tracker will be live and fully functional.
+To deploy:
+1. Upload contents of `/docs` to your GitHub repo
+2. Set GitHub Pages source to `main` branch and `/ (root)` or `/docs`
+3. Visit the live URL after GitHub builds your site.
