@@ -1,19 +1,9 @@
 # Mobile Market Tracker
 
-A simple React app for tracking mobile market intake data, including:
-- Age groups
-- First-time vs. returning visitors
-- Remarks
-- Timestamp and location
+This is the full version of the tracker.
 
-## How to Use
-1. Upload this folder to a new GitHub repository
+## How to Deploy
+1. Upload contents of `/docs` folder to your GitHub repo
 2. Go to Settings > Pages
-3. Set Source to `main` branch and root directory
-4. GitHub Pages will deploy your app
-
-## Features
-- Mobile-optimized form
-- Auto-calculates totals
-- Export CSV
-- Designed for Airtable compatibility
+3. Set source to `main` branch and `/docs` folder
+4. Your tracker will be live and fully functional.

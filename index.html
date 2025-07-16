@@ -1,1 +1,36 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Mobile Market Tracker</title></head><body><div id='root'></div><script src='index.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Market Tracker</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    input, select, button, textarea { display: block; margin: 10px 0; width: 100%; padding: 8px; }
+    .totals { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>Mobile Market Tracker</h1>
+  <form id="trackerForm">
+    <label>Ages 0–4: <input type="number" name="age_0_4" /></label>
+    <label>Ages 5–17: <input type="number" name="age_5_17" /></label>
+    <label>Ages 18–59: <input type="number" name="age_18_59" /></label>
+    <label>Ages 60+: <input type="number" name="age_60_plus" /></label>
+    <label>New to Mobile Market?
+      <select name="isNew">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <label>Remarks: <textarea name="remarks"></textarea></label>
+    <button type="button" onclick="getLocation()">Get Location</button>
+    <button type="button" onclick="addEntry()">Add Entry</button>
+  </form>
+
+  <div class="totals" id="totals"></div>
+  <button onclick="exportCSV()">Export CSV</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
